@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto #1 Js Challenge</title>
+</head>
+<body>
+    <header>
+        <h1>BOLETAS DE CINE VS SUSCRIPCIONES ONLINE </h1>
+        <p> Primer Reto del JS Challenge </p>
+    </header>
+        
+        <form id="formulario">
+            <label for="cuantas"> ¿Cuantas peliculas ves al mes en cine?</label>
+            <input id="cuantas" type="number"/>
+
+            <label for="cuanto"> ¿Cuanto vale una ida al cine?</label>
+            <input id="cuanto" type="number"/>
+            <div id="precioCine"></div>
+
+            <h2> En que plataformas ves las peliculas o series?</h2>
+            
+            <label for="netflix-checbox"> Netlfix</label>
+            <input id="netflix-checbox" type="checkbox"/>
+            
+            <label for="hbo-checbox" > HBO+</label>
+            <input  id="hbo-checbox" type="checkbox"/>
+
+            <label for="disney-checbox"> Disney Plus </label>
+            <input  id="disney-checbox"type="checkbox"/>
+
+            <label for="amazon-checbox" > Amazon prime </label>
+            <input  id="amazon-checbox"type="checkbox"/>
+
+            <div id="precioStreaming"></div>
+
+            <br>
+            <br>
+            <br>
+            
+            <!--
+            <label for="button-calcular"></label>
+            <input id="button-calcular" type="submit" value="Calcular">
+            -->
+            <div id="resultado"></div>
+        </form>
+    <script src="./boletos_plataformas.js"></script>
+    <style>
+        body{
+            margin:0px;
+            background-color:#B5DEFF;
+            font-family:'Mulish', sans-serif;
+            text-align: center;
+        }
+    </style
+    
+</body>
+</html>

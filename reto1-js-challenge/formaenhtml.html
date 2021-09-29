@@ -1,0 +1,37 @@
+<script>
+    const formulario= document.getElementById("formulario")
+    const inputCuantificar= document.getElementById("cuantificar");
+    const inputCuanto= document.getElementById("cuanto");
+    const netflixChecbox= document.getElementById("netflix-checbox");
+    const hboChecbox= document.getElementById("hbo+-checbox");
+    const disneyChecbox= document.getElementById("disney-checbox");
+    const amazonChecbox= document.getElementById("amazon-checbox");
+        
+    formulario.addEventListener("change", function(){  // cambio
+        const precioEntrada=10000;
+        let cantidadDeEntradas=0;
+
+        let precioSuscripcion=0;
+        cantidadDepeliculas=inputCuantificar.value;
+
+        if (netflixChecbox.checked)
+        precioSuscripcion += 16900;
+
+        if (hboChecbox.checked)
+        precioSuscripcion += 9991;
+
+        if (disneyChecbox.checked)
+        precioSuscripcion += 23900;
+        
+        if (amazonChecbox.checked)
+        precioSuscripcion += 14900;
+
+        const precioFinalEntradas=precioEntrada * cantidadDeEntradas;
+        console.log("ir a cine te costaria" + precioFinalEntradas);
+        console.log("ver estos programas online te costaria" + precioSuscripcion);
+        
+    });
+</script>
+
+<label for="cuanto"> ¿Cuanta vale una ida al cine?</label>
+            <input id="cuanto" type="number"/>
